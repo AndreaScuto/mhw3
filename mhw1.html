@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="mhw1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jscript.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MiniHomework3</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="overlay"></div>
+
+      <nav class="NavigationBar">
+        <a id="Bottone" href="#">Home</a>
+        <a id="Bottone" href="#">Contatti</a>
+        <a id="Bottone" class="BottoneArchivio" href="#">Archivio F1</a>
+      </nav>
+
+      <h1 class="TitoloH">Report Scuderia Ferrari F1</h1>
+    </header>
+
+    <figure class="Avatar">
+      <img src="avatar.jpg" class="ImmAvatar" />
+      <figcaption id="InfoAvatar"><br />Andrea Scuto</figcaption>
+    </figure>
+
+    <section>
+      <div class="Contenitore">
+        <div class="Progressivo">1°</div>
+
+        <article class="Articolo">
+          <h1 class="TitoloA">Gp dell' Arabia Saudita</h1>
+
+          <p class="Testo">
+            L’unica nota positiva del fine settimana saudita è Charles Leclerc
+            (costretto però ad un weekend tutto in salita per la penalità di 10
+            posizioni in griglia a causa dei problemi di affidabilità alle
+            centraline in Bahrain), mentre tutto il resto lascia a desiderare.
+            Carlos Sainz ha fatto tanta fatica e la SF-23 si è dimostrata la
+            quarta forza in campo nel secondo stint del GP con gomme hard, dopo
+            la beffa per il pessimo tempismo della Safety Car.
+          </p>
+          <p class="Testo">Prestazione deludente!</p>
+          <img src="sf23Jeddah.jpg" class="ImmArticolo" />
+        </article>
+      </div>
+
+      <div class="Contenitore">
+        <div class="Progressivo">2°</div>
+
+        <article class="Articolo">
+          <h1 class="TitoloA">Mille miglia di Sebring</h1>
+
+          <p class="Testo">DA CAMBIARE IN F1</p>
+          <p class="Testo">Grandissimo debutto per il team Endurance!</p>
+          <img src="wecs.jpg" class="ImmArticolo" />
+        </article>
+      </div>
+
+      <div class="Contenitore">
+        <div class="Progressivo">3°</div>
+
+        <article class="Articolo">
+          <h1 class="TitoloA">Gp del Bahrain</h1>
+
+          <p class="Testo">
+            La Ferrari torna a casa dal Bahrain con un magro bottino e tanti
+            dubbi sulla competitività della SF-23, più veloce sul giro secco che
+            in gara. La nuova monoposto sembra avere ancora del potenziale
+            inespresso, anche perché il tracciato di Sakhir ha messo in risalto
+            quelle che sono le debolezze della vettura e non i suoi punti di
+            forza.
+          </p>
+          <p class="Testo">Partenza da dimenticare per la Ferrari.</p>
+          <img src="sf23Bharain.jpeg" class="ImmArticolo" />
+        </article>
+      </div>
+    </section>
+
+    <div id="Box" class="BoxRicerca">
+      <form class="formArchivio">
+        <h3>
+          Inserire l'anno e la tipologia di campionato che si vuole visualizzare
+          per consultare l'archivio della Formula 1:
+        </h3>
+        <input type="number" min="1950" max="2022" id="Anno" />
+        <select name="Tipo" id="Tipo">
+          <option value="driverStandings">Campionato piloti</option>
+          <option value="constructorStandings">Campionato costruttori</option>
+        </select>
+        <input type="submit" id="submit" class="BottoneCerca" value="Cerca" />
+      </form>
+      <button class="ChiudiRicerca">Chiudi</button>
+
+      <table id="tabella" class="tabellaArchivio" cellspacing="1" cellpadding="5" border="1">
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th class="PlaceH1">PLACEHOLDER</th>
+            <th class="PlaceH2">PLACEHOLDER</th>
+            <th>Punti</th>
+            <th>Vittorie</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <br />
+    </div>
+
+    <div id="Box" class="BoxGare">
+      <h3>Gare campionato 2023:</h3>
+      <button class="ChiudiGare">Chiudi</button>
+      <table id="tabella" class="tabellaGare" cellspacing="1" cellpadding="5" border="1">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Circuito</th>
+            <th>Luogo</th>
+            <th>Stato</th>
+            <th>Giri</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <br />
+    </div>
+
+    <div class="BannerGare">
+      Clickami per vedere le gare del campionato 2023!
+    </div>
+
+    <footer>Fatto da Andrea Scuto matricola 100015891</footer>
+  </body>
+</html>
+
